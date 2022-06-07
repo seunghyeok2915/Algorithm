@@ -13,3 +13,4 @@ function bubbleSort(array) {
 }
 
 console.log(bubbleSort([6, 4, 8, 2, 1]));
+//Output : [1, 2, 4, 6, 8]
