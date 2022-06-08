@@ -24,9 +24,9 @@
 ```js
 function bubbleSort(array) {
     let temp = 0;
-    for (let i = 0; i &lt; array.length; i++) {
-        for (let j = 1; j &lt; array.length - i; j++) {
-            if (array[j - 1] &gt; array[j]) {
+    for (let i = 0; i < array.length; i++) {
+        for (let j = 1; j < array.length - i; j++) {
+            if (array[j - 1] > array[j]) {
                 temp = array[j - 1];
                 array[j - 1] = array[j];
                 array[j] = temp;
