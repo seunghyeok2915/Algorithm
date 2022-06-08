@@ -1,10 +1,10 @@
 # 거품 정렬 Bubble Sort
-서로 인접한 두 원소의 대소를 비교한후, 앞자리가 뒷자리보다 크다면 둘이 교환하는 알고리즘
+서로 인접한 두 원소의 대소를 비교한 후, 앞자리가 뒷자리보다 크다면 둘이 교환하는 알고리즘
 
 ## 원리
-1회전 하면 제일 큰수는 맨뒤로 가게된다.
+1회전 하면 제일 큰 수는 맨 뒤로 가게 된다.
 
-맨 뒤에서 부터 범위를 좁혀 나가며 계속 회전하면 오름차순 정렬이 된다.
+맨 뒤에서부터 범위를 좁혀 나가며 계속 회전하면 오름차순 정렬이 된다.
 
 ## 시간복잡도
 최선, 평균, 최악 모두 시간복잡도가 O(n^2) 으로 동일함.
@@ -24,9 +24,9 @@
 ```js
 function bubbleSort(array) {
     let temp = 0;
-    for (let i = 0; i < array.length; i++) {
-        for (let j = 1; j < array.length - i; j++) {
-            if (array[j - 1] > array[j]) {
+    for (let i = 0; i &lt; array.length; i++) {
+        for (let j = 1; j &lt; array.length - i; j++) {
+            if (array[j - 1] &gt; array[j]) {
                 temp = array[j - 1];
                 array[j - 1] = array[j];
                 array[j] = temp;
